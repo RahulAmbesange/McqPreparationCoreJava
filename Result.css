@@ -1,0 +1,72 @@
+.result-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-family: 'Arial', sans-serif;
+   text-align: center;
+}
+
+.result-box {
+   background: #ffffff;
+   padding:18px 24px;
+   border-radius: 10px;
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+   width: 90%; /* Make it responsive, but with a max-width */
+   max-width: 600px; /* Set a maximum width for the box */
+   text-align: center;
+}
+
+.result-container h2 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 20px;
+   color: #ff4081;
+}
+
+.result-container p {
+   font-size: 1.2rem;
+   margin-bottom: 30px;
+   color: #fff;
+}
+
+.score-box {
+   margin-bottom: 30px;
+}
+
+.score-box .score {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #fff; /* Text color is white */
+   background-color: #ff4081; /* Background color */
+   border-radius: 50%; /* Circular shape */
+   width: 90px; /* Set a fixed width for the circle */
+   height: 90px; /* Set a fixed height for the circle */
+   display: flex;
+   justify-content: center; /* Center the content horizontally */
+   align-items: center; /* Center the content vertically */
+   margin: 0 auto; /* Center the circle within its container */
+}
+
+.score-box .total-questions {
+   font-size: 1.2rem;
+   color: #000    ;
+   padding: 10px ;
+}
+
+.home-btn {
+   margin-top: 30px;
+   padding: 12px 30px;
+   font-size: 1.2rem;
+   background-color: #ff4081;
+   color: white;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+   background-color:black;
+}

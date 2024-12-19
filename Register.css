@@ -1,0 +1,119 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f9fafb; /* Set background to light gray */
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+ 
+.register-container {
+   background-color: #1F1F1F;
+   width: 100%;
+   max-width: 600px;  /* Increased width */
+   padding: 24px 54px 24px 54px;
+   border-radius: 12px;
+   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+   animation: slideDown 0.6s ease-out;
+   margin-top: 60px;
+}
+
+h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #4caf50;
+   font-weight: 600;
+}
+
+label {
+   font-weight: bold;
+   color: #333;
+   display: block;
+   margin-bottom: 8px;
+}
+
+input {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 15px;
+   border: 2px solid #ccc;
+   border-radius: 8px;
+   font-size: 1rem;
+   transition: border-color 0.3s;
+}
+
+input:focus {
+   border-color: #4caf50;
+   outline: none;
+   box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+.error {
+   color: #e53935;
+   font-size: 0.9rem;
+   margin-top: -10px;
+   margin-bottom: 12px;
+}
+
+.regBtn {
+   width: 100%;
+   padding: 14px;
+   background-color: #FF4081;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: bold;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.regBtn:disabled {
+   background-color: #9e9e9e;
+   cursor: not-allowed;
+}
+
+.regBtn:hover:not(:disabled) {
+   background-color: #FF4081;
+}
+
+.link-container {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.link-container .regLogin {
+   font-size: 1rem;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+   transition: color 0.3s ease;
+}
+
+.link-container .regLogin:hover {
+   color: #FF4081;
+   text-decoration: underline;
+}
+
+@keyframes slideDown {
+   0% {
+     transform: translateY(-20px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0);
+     opacity: 1;
+   }
+}
+
+@media (max-width: 500px) {
+   .register-container {
+     padding: 15px 20px;
+   }
+
+   .regBtn {
+     font-size: 0.9rem;
+   }
+}

@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+ }
+ 
+ body {
+   background-color: #181818;
+   color: #333;
+ }
+ 
+ /* Navbar */
+ .navbar {
+   background-color: #181818;
+   padding: 12px 24px;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .navbar a {
+   color: white;
+   text-decoration: none;
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 1rem;
+   transition: color 0.3s ease;
+ }
+ 
+ .navbar a:hover {
+   color: #cce7cc;
+ }
+ 
+ /* Exam Container */
+ .exam-container {
+   max-width: 850px;
+margin-top: 60px;
+   background-color: #7e7e7e4d;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+   font-size: 1.1rem;
+ }
+ 
+ .exam-container h2 {
+   text-align: center;
+   margin-bottom: 20px;
+  
+   font-size: 2rem;
+ }
+ 
+ /* Question Card */
+ .question-card {
+   margin-bottom: 25px;
+   padding: 20px;
+   background-color: #fff;
+   color: black;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .question-card h3 {
+
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #333;
+ }
+ 
+/* Options Styling
+.question-card ul {
+   list-style: none;
+   padding-left: 0;
+ } */
+ 
+/* Styling for the options list */
+/* Styling for the options list */
+.options-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+       justify-content: center;
+       align-items: center;
+ }
+ 
+ /* Styling for each option item */
+ .option-item {
+   display: inline-block;
+   margin: 10px;
+   text-align: center;
+ }
+ 
+ /* Styling for the label to align radio button and text */
+ .option-label {
+   display: flex;
+   justify-content:center; /* Ensures consistent alignment between radio and text */
+   align-items: center; /* Aligns radio button and text vertically */
+   font-size: 1rem;
+   color: #333;
+   cursor: pointer; /* Makes the label clickable */
+ }
+ 
+ /* Styling for the input radio */
+ .option-label input[type="radio"] {
+   margin-right: 10px; /* Adds minimal space between button and text */
+   accent-color: #F13766; /* Custom color for the radio button */
+ }
+ 
+ /* Highlight the option text when selected */
+ .option-label input[type="radio"]:checked + span {
+   color: #F13766; /* Change text color when selected */
+ }
+ 
+ 
+ 
+ /* Current Score Display */
+ .current-score {
+   margin-top: 15px;
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #6b6b6b;
+ }
+ 
+ /* Submit Button */
+ .submit-button {
+   width: 100%;
+   margin-top: 9px;
+   font-size: 1.1rem;
+   color: #fff;
+   background-color: #ffffff8a;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   text-align: center;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .submit-button:hover {
+   background-color: #5A6268;
+ }
+ 
+ .submit-button:active {
+   transform: scale(0.98);
+ }
+ 
+ /* Result Section */
+ .final-result {
+   text-align: center;
+   margin-top: 30px;
+   padding: 20px;
+   background-color: #181818;
+   border-radius: 10px;
+   border: 1px solid #c8e6c9;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .final-result h3 {
+   font-size: 1.5rem;
+   color: #2e7d32;
+   font-weight: bold;
+ }
+ 
+ .final-result p {
+   font-size: 1.2rem;
+   color: #444;
+ }
+ .loadingquestions{
+   color: white;
+ }
+
+
+
+
+ .back-button1 {
+   display: inline-flex; /* Use flex to align icon and text */
+   align-items: center; /* Center the icon and text vertically */
+   margin: 10px 0; /* Space between buttons */
+   padding: 10px 20px;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   background-color: #5A6268;
+   font-size: 1.1rem;
+   cursor: pointer;
+   text-align: center !important;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .back-button1:hover {
+   background-color: #5a6268;
+ }
+ 
+
+ 
+ /* Mobile Responsiveness */
+ @media (max-width: 768px) {
+   .exam-container {
+     padding: 20px;
+     margin: 20px;
+   }
+ 
+   .question-card {
+     padding: 15px;
+   }
+ 
+   .submit-button {
+     width: 100%;
+     margin-top: 15px;
+   }
+ 
+   .navbar {
+     padding: 10px;
+   }
+ 
+   .navbar a {
+     font-size: 0.9rem;
+     margin-left: 10px;
+   }
+ }
+ 
